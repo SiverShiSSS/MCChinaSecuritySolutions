@@ -41,6 +41,15 @@ Fallback relative path: [./assets/demo.mp4](./assets/demo.mp4)
 - Rollback & Exit Strategy
 - References
 
+Additional enterprise-focused sections:
+- Value & Advantages (Why this)
+- Effort & Deliverables
+- Strengthened Security & Compliance Controls
+- Risks & Limitations
+- Operations & Monitoring
+- Release & Rollback Plan
+- Decision Checklist
+
 ---
 
 ## Background & Goals
@@ -57,6 +66,24 @@ High-level flow:
 2. Based on federation configuration, the MC tenant forwards the authentication flow to the Global tenant's SAML endpoint.
 3. The user completes authentication in the Global tenant (including MFA policies).
 4. The Global tenant returns a SAML assertion to the MC tenant. The MC tenant validates the signature and attributes and establishes the session.
+
+## Value & Advantages (Why this)
+- Reuse existing Global identity and policies: No need to rebuild a full IdP/MFA/governance stack in MC; reduces build and run costs.
+- Minimal change surface: MC side focuses on federation and entry redirection; business apps see minimal changes.
+- Compliance balance: Users reside in China while authentication is performed by the Global tenant—balance control and convenience within compliance boundaries.
+- Reversible architecture: Non-invasive to app code; quick switch back to Managed mode if needed.
+
+## Effort & Deliverables
+- Effort type:
+  - Mostly configuration: via UI/Portal and Graph scripts; no application code deployment needed.
+  - Optional automation: package federation, claim mapping, and validation into PowerShell scripts for reuse and audit.
+- Main deliverables:
+  - Design and differences documentation (this doc + diagrams).
+  - Complete federation scripts and parameter inventory (including certificates and endpoints).
+  - Test cases and evidence (screenshots/logs).
+  - Runbook and rollback playbook.
+
+> Do we need to "deploy code"? Generally no. If integration with gateways/identity middle layers is desired, add small automation scripts—not app code changes.
 
 ## Prerequisites & Boundaries
 - Global and MC tenants require Global Administrator or equivalent permissions.
@@ -105,6 +132,34 @@ High-level flow:
 - `Issuer`: Unique URI for the IdP; MUST match the `IssuerUri` configured in MC federation; do not reuse sample values.
 
 Reference: See Microsoft Learn "Required attributes" section (link in References).
+
+## Strengthened Security & Compliance Controls
+- Least privilege and separation of duties: split roles for federation, certificates, and claims; enforce approval, audit, and alerting.
+- Keys and certificates: centralized management, periodic rotation, pre-expiry alerts; storage/backup per enterprise key policy.
+- Conditional Access: enforce device/network/risk/geo policies at IdP; complement with session controls in MC.
+- Logging and evidence: enable audit/sign-in logs on both sides and centralize into SIEM (Mooncake-available options).
+
+## Operations & Monitoring
+- KPIs: sign-in success rate, MFA trigger rate, assertion failure reasons (NameID mismatch, cert errors, Issuer mismatch).
+- Alerts: certificate expiry, failure spikes, endpoint unreachable, claim changes.
+- Drills: periodic exercises (switch back to Managed, rotate certs, endpoint cutover).
+
+## Risks & Limitations
+- Feature parity gaps: control-plane/API differences between Mooncake and Global—verify versions and availability.
+- Identifier alignment: instability or complex mapping of `ImmutableID` can cause failures.
+- Cross-cloud dependency: ensure stable reachability and bandwidth to Global endpoints.
+
+## Release & Rollback Plan
+- Phased rollout: canary specific users/apps, then expand gradually.
+- Change windows: perform cert/endpoint/claim changes off-peak and keep a rollback window.
+- Quick rollback path: keep Managed config backups and scripts for one-click revert.
+
+## Decision Checklist
+- Can we avoid app code changes or limit them to configuration?
+- Do we have a stable, auditable `ImmutableID` alignment approach?
+- Are Conditional Access and session protection up to policy standards?
+- Are certificate/key rotation plans complete and rehearsed?
+- Do monitoring and alerts cover critical points in the sign-in path?
 
 ## Demo Commands (PowerShell)
 > Execute in the MC environment using Microsoft Graph PowerShell. Replace placeholders with your values.
