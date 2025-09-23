@@ -1,3 +1,5 @@
+[English](README.en.md) | [中文](README.md)
+
 # MC China Security Solutions
 
 For customers in China, this project explores and consolidates technical solutions to meet business, security compliance, and operations needs. It focuses on practical, reusable best practices in the 21V Mooncake environment, covering Microsoft security and identity products, adapted to China-specific platform characteristics and constraints.
@@ -55,3 +57,4 @@ Additional folders and samples will be added by capability area (Identity, Netwo
 
 ## Disclaimer
 This repository is for technical exploration and reference and is not legal/compliance advice. Capabilities change over time; validate against official docs and your environment. Test thoroughly in non-production and assess business impact before changes.
+
