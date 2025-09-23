@@ -1,6 +1,6 @@
-## MC（月光）租户对接全球租户 SAML SSO 方案（非官方）
+## Monncake China租户对接全球租户 SAML SSO 方案（非官方）
 
-> 适用场景：在中国云（Mooncake/世纪互联）中的 Microsoft Entra 租户（下称“MC 租户”）需要与全球 Azure（下称“全球租户”）通过 SAML 进行单点登录（SSO），以复用全球租户的身份与认证能力。
+> 适用场景：在中国云（Mooncake/世纪互联）中的 Microsoft Entra 租户（下称“MC 租户”）需要与全球 Azure（下称“全球租户”）通过 SAML 进行单点登录（SSO），MC租户作为SP，global租户作为真正的IDP，用户数据存储在Mooncake China，以合规地复用全球租户的身份与认证能力。可以与CCB2B配合使用，也可以按需求替换CCB2B。
 
 > 重要声明：本方案为实践型绕行方案，非 Microsoft 官方支持特性，仅供参考与试点。请在非生产环境充分验证后再行上线。由此带来的风险与影响请自行评估与承担。
 
