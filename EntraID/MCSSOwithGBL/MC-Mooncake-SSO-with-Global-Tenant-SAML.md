@@ -1,3 +1,5 @@
+[English](MC-Mooncake-SSO-with-Global-Tenant-SAML.en.md) | [中文](MC-Mooncake-SSO-with-Global-Tenant-SAML.md)
+
 ## Monncake China租户对接全球租户 SAML SSO 方案（非官方）
 
 > 适用场景：在中国云（Mooncake/世纪互联）中的 Microsoft Entra 租户（下称“MC 租户”）需要与全球 Azure（下称“全球租户”）通过 SAML 进行单点登录（SSO），MC租户作为SP，global租户作为真正的IDP，用户数据存储在Mooncake China，以合规地复用全球租户的身份与认证能力。可以与CCB2B配合使用，也可以按需求替换CCB2B。
@@ -8,13 +10,20 @@
 
 ### 演示视频
 
-内嵌播放（GitHub 网页端支持的浏览器可直接播放）：
+优先使用 Raw 直链在线播放；若浏览器或 GitHub 预览受限，可使用仓库页面或下载到本地播放。
 
-<video src="./assets/demo.mp4" controls width="720">
-  您的浏览器不支持内嵌视频。可直接下载观看：assets/demo.mp4
+内嵌播放（使用 Raw 链接）：
+
+<video src="https://raw.githubusercontent.com/SiverShiSSS/MCChinaSecuritySolutions/main/EntraID/MCSSOwithGBL/assets/demo.mp4" controls width="720">
+  您的浏览器不支持内嵌视频。请使用下方“Raw 直链”或“仓库文件链接/下载”。
 </video>
 
-下载链接：[点击下载演示视频](./assets/demo.mp4)
+- Raw 直链（可右键另存/复制到播放器）：
+  - https://raw.githubusercontent.com/SiverShiSSS/MCChinaSecuritySolutions/main/EntraID/MCSSOwithGBL/assets/demo.mp4
+- 仓库文件页面（GitHub 界面查看/下载）：
+  - https://github.com/SiverShiSSS/MCChinaSecuritySolutions/blob/main/EntraID/MCSSOwithGBL/assets/demo.mp4
+
+相对路径（备用）：[./assets/demo.mp4](./assets/demo.mp4)
 
 ---
 
