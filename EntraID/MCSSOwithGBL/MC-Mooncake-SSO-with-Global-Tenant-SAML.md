@@ -6,6 +6,18 @@
 
 ---
 
+### 演示视频
+
+内嵌播放（GitHub 网页端支持的浏览器可直接播放）：
+
+<video src="./assets/demo.mp4" controls width="720">
+  您的浏览器不支持内嵌视频。可直接下载观看：assets/demo.mp4
+</video>
+
+下载链接：[点击下载演示视频](./assets/demo.mp4)
+
+---
+
 ### 目录
 - 背景与目标
 - 方案架构概览
