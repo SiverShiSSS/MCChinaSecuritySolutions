@@ -42,6 +42,16 @@
    - PowerShell 7+/Git 已安装，必要时可使用代理或中国区网络以访问中国云端点
 3. 阅读对应能力域的目录与文档，按步骤进行配置与验证
 
+### 在 21V Mooncake（中国）使用 Graph 的注意事项
+- PowerShell 连接 Graph：
+  - 委托模式：`Connect-MgGraph -Environment china -Scopes "<所需Scopes>"`
+  - 应用（服务主体）模式：`Connect-MgGraph -Environment china -TenantId <TenantId> -ClientSecretCredential $credential`
+- 端点差异：
+  - 登录颁发：`https://login.chinacloudapi.cn`
+  - Graph API：`https://microsoftgraph.chinacloudapi.cn`
+  - `.default` 作用域：`https://microsoftgraph.chinacloudapi.cn/.default`
+  - 若文档出现全球端点（如 `graph.microsoft.com`），请替换为上面的中国区端点。
+
 ## 贡献方式（Contributing）
 - 欢迎通过 Issues 反馈需求/问题，或提交 Pull Request 贡献文档与样例
 - 建议遵循：

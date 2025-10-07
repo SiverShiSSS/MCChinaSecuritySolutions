@@ -1,6 +1,6 @@
 [English](MC-Mooncake-SSO-with-Global-Tenant-SAML.en.md) | [中文](MC-Mooncake-SSO-with-Global-Tenant-SAML.md)
 
-## Monncake China租户对接全球租户 SAML SSO 方案（非官方）
+## Monncake China租户对接全球租户 SAML SSO 方案
 
 > 适用场景：在中国云（Mooncake/世纪互联）中的 Microsoft Entra 租户（下称“MC 租户”）需要与全球 Azure（下称“全球租户”）通过 SAML 进行单点登录（SSO），MC租户作为SP，global租户作为真正的IDP，用户数据存储在Mooncake China，以合规地复用全球租户的身份与认证能力。可以与CCB2B配合使用，也可以按需求替换CCB2B。
 
@@ -59,6 +59,24 @@
 - 动机：复用全球租户的现有身份、MFA 与治理能力；减少多地多套身份系统的建设与运维成本。
 
 ## 方案架构概览
+- 架构图预览（Mermaid 示意，确认后我将替换为原版贴图 PNG/.drawio）：
+
+```mermaid
+flowchart TB
+  Cloud["Microsoft Entra ID"]:::cloud
+
+  AD1["On‑premises AD #1"]:::ad
+  AD2["On‑premises AD #2"]:::ad
+  AD3["On‑premises AD #3"]:::ad
+
+  Cloud --> AD1
+  Cloud --> AD2
+  Cloud --> AD3
+
+  classDef cloud fill:#E6F2FB,stroke:#0078D4,stroke-width:2px;
+  classDef ad fill:#F2F6FC,stroke:#0078D4,stroke-width:1.5px;
+```
+
 - 全球租户：承载一个非图库 SAML2 企业应用（IdP 端配置），负责发起认证并签发 SAML 断言。
 - MC 租户：对自有自定义域启用 “域联合（Federation）”，将被动登录/主动登录请求重定向至全球租户的 SAML 端点。
 - 断言关键：SAML 响应中的 `NameID` 必须与 MC 租户中 Microsoft Entra 用户的 `ImmutableID` 一致；此外可携带 `IDPEmail` 等辅助属性。
