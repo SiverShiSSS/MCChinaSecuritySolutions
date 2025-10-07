@@ -1,6 +1,6 @@
 [English](MC-Mooncake-SSO-with-Global-Tenant-SAML.en.md) | [中文](MC-Mooncake-SSO-with-Global-Tenant-SAML.md)
 
-## SAML SSO solution for Mooncake China tenant integrating with Global tenant (Unofficial)
+## SAML SSO solution for Mooncake China tenant integrating with Global tenant
 
 > Applicable scenario: A Microsoft Entra tenant in China cloud (Mooncake/21V, hereafter "MC tenant") needs to implement SAML-based single sign-on (SSO) with a Global Azure tenant (hereafter "Global tenant"). The MC tenant acts as the Service Provider (SP), and the Global tenant acts as the Identity Provider (IdP). User data resides in Mooncake China so that the Global tenant's identity and authentication capabilities can be reused in a compliant manner. Can be used together with CCB2B or selectively replace it as needed.
 

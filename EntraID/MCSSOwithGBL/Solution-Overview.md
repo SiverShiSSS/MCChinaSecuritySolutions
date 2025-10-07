@@ -20,7 +20,7 @@
 
 **最佳实践场景：总部在中国，主要业务系统部署在Mooncake，需要访问Global资源**
 
-![架构图：Mooncake作为IdP的跨云SSO方案](EntraID/MCSSOwithGBL/assets/upstream-view.png)
+![架构图：Mooncake作为IdP的跨云SSO方案](./assets/upstream-view.png)
 
 #### 架构优势
 - **🏢 中国总部优先**: 身份管理中心在中国，符合本土化管理要求

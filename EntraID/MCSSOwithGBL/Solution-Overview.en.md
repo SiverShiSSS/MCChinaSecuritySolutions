@@ -20,7 +20,7 @@ This solution provides China-based customers with a comprehensive cross-cloud Si
 
 **Best Practice Scenario: China-headquartered enterprises with primary business systems on Mooncake, requiring Global resource access**
 
-![Architecture: Cross-Cloud SSO with Mooncake as IdP](EntraID/MCSSOwithGBL/assets/upstream-view.png)
+![Architecture: Cross-Cloud SSO with Mooncake as IdP](./assets/upstream-view.png)
 
 #### Architecture Advantages
 - **🏢 China-First Approach**: Identity management center in China, aligning with local governance requirements
