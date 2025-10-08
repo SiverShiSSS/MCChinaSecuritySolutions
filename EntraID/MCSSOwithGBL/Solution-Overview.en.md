@@ -122,118 +122,55 @@ Identity federation-based security protection system for comprehensive enterpris
 - [ ] Implement corresponding level security protection measures
 - [ ] Establish security incident emergency response mechanisms
 
-### Technical Compliance Recommendations
+### Technical Compliance Framework
 
-#### 🔐 Data Encryption Requirements
-```powershell
-# Ensure SAML assertions use strong encryption algorithms
-$SamlConfig = @{
-    SigningAlgorithm = "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"
-    DigestAlgorithm = "http://www.w3.org/2001/04/xmlenc#sha256"
-    EncryptionMethod = "http://www.w3.org/2001/04/xmlenc#aes256-cbc"
-}
-```
+This solution addresses key China regulatory requirements while enabling global Microsoft services access:
 
-#### 🏢 Organizational Boundary Controls
-- Configure Conditional Access policies to restrict specific geographic locations
-- Implement device compliance requirements
-- Enable session controls and monitoring
+#### Data Sovereignty Protection
+- **🏢 Identity Data Localization**: User master identity objects remain within China borders (Mooncake)
+- **🔐 Controlled Data Flow**: Only necessary authentication tokens cross borders, not user data
+- **📊 Audit Trail**: Complete visibility into cross-border authentication activities
 
-#### 📊 Audit and Monitoring
-- Enable comprehensive Azure AD audit logging
-- Configure Security Information and Event Management (SIEM) integration
-- Establish anomalous login detection and response mechanisms
+#### Regulatory Alignment
+- **🛡️ Cybersecurity Law**: Compliant data handling and security assessment processes
+- **🔒 PIPL Compliance**: User consent mechanisms and data minimization principles
+- **⚖️ Critical Infrastructure**: Appropriate security protection levels for enterprise systems
+
+#### Security Controls
+- **🔑 Strong Authentication**: Multi-factor authentication and conditional access policies
+- **📈 Continuous Monitoring**: Real-time security analysis and incident response
+- **🛡️ Zero Trust Architecture**: Identity-centric security model with least privilege access
 
 ---
 
-## Technical Implementation Guide
+## Next Steps
 
-### Prerequisites Checklist
+For detailed technical implementation guidance, please refer to our comprehensive documentation:
 
-#### Environment Preparation
-- [ ] Mooncake and Global tenant administrator permissions
-- [ ] Valid domain names and SSL certificates
-- [ ] Network connectivity testing completed
-- [ ] DNS resolution properly configured
+- **[Technical Implementation Guide](MC-Mooncake-SSO-with-Global-Tenant-SAML.en.md)** - Complete SAML federation setup instructions
+- **[China Compliance Checklist](China-Compliance-Checklist.md)** - Regulatory compliance framework
+- **[PowerShell Automation Scripts](../AutomationScripts/)** - Ready-to-use deployment automation
+- **[Architecture Diagrams](./assets/)** - Detailed technical architecture resources
 
-#### License Requirements
-- [ ] Azure AD Premium P1/P2 licenses (supporting enterprise applications)
-- [ ] Corresponding M365 or Azure service licenses
-- [ ] Third-party application SAML integration licenses (if required)
+### Solution Comparison
 
-### POC Validation Steps
+| Aspect | Cross-Cloud SSO | Cross-Cloud B2B (CCB2B) |
+|--------|-----------------|-------------------------|
+| **Identity Model** | Federated identity management | Guest user collaboration |
+| **User Experience** | Seamless single sign-on | Invitation-based access |
+| **Management** | Centralized identity control | Distributed guest management |
+| **Compliance** | Source tenant data residency | Data replication across tenants |
+| **Primary Use Case** | Enterprise internal access | Cross-organizational sharing |
 
-#### Phase 1: Basic Connectivity Validation
-```powershell
-# Test endpoint connectivity
-Test-NetConnection login.chinacloudapi.cn -Port 443
-Test-NetConnection graph.chinacloudapi.cn -Port 443
-Test-NetConnection login.microsoftonline.com -Port 443
-```
+### Implementation Approach
 
-#### Phase 2: SAML Federation Configuration Validation
-- [ ] IdP metadata correctly exported and imported
-- [ ] SP configuration parameters accurately set
-- [ ] Certificate validity and trust chain verification
-- [ ] NameID mapping and attribute claims testing
+This solution follows a phased deployment methodology:
 
-#### Phase 3: End-to-End User Experience Validation
-- [ ] Browser SSO flow testing
-- [ ] Mobile device access verification
-- [ ] Access testing under different network environments
-- [ ] Error scenarios and fallback mechanism verification
-
-#### Phase 4: Security and Compliance Validation
-- [ ] Conditional Access policy effectiveness confirmation
-- [ ] MFA integration functionality verification
-- [ ] Audit log recording integrity check
-- [ ] Data transmission encryption verification
-
----
-
-## Comparison with CCB2B Solution
-
-| Comparison Dimension | Cross-Cloud SSO (This Solution) | Cross-Cloud B2B (CCB2B) |
-|---------------------|--------------------------------|-------------------------|
-| **Identity Model** | Federated identity, user master objects in source tenant | Guest users, creating B2B objects in target tenant |
-| **Technical Protocol** | SAML 2.0 / OpenID Connect | Microsoft Graph B2B invitation API |
-| **User Experience** | Transparent single sign-on | Requires accepting B2B invitations |
-| **Management Complexity** | Centralized identity management | Distributed guest user management |
-| **Compliance Considerations** | Identity data retained in source tenant | User data replicated to target tenant |
-| **Use Cases** | Internal enterprise cross-cloud access | Cross-organizational collaboration and resource sharing |
-
-
-## Implementation Roadmap
-
-### Phase 1: Planning & Preparation (2-3 weeks)
-- [ ] Business requirements analysis and scenario confirmation
-- [ ] Technical architecture design and review
-- [ ] Compliance requirements assessment and gap analysis
-- [ ] Project team formation and training
-
-### Phase 2: Environment Setup (2-4 weeks)
-- [ ] Test environment configuration
-- [ ] Basic connectivity establishment
-- [ ] Certificate and security configuration
-- [ ] Initial functionality verification
-
-### Phase 3: Application Integration (3-6 weeks)
-- [ ] Priority application SAML integration
-- [ ] User attribute mapping configuration
-- [ ] Access policies and permission settings
-- [ ] User acceptance testing
-
-### Phase 4: Production Deployment (2-3 weeks)
-- [ ] Production environment configuration
-- [ ] User migration and training
-- [ ] Monitoring and alerting setup
-- [ ] Go-live support and optimization
-
-### Phase 5: Operational Optimization (Ongoing)
-- [ ] Performance monitoring and tuning
-- [ ] Continuous security policy improvement
-- [ ] User feedback collection and enhancement
-- [ ] New application and scenario expansion
+1. **Planning & Assessment** - Business requirements and compliance analysis
+2. **Pilot Environment** - Test environment setup and validation
+3. **Application Integration** - Priority services federation
+4. **Production Deployment** - Full-scale rollout with monitoring
+5. **Optimization** - Continuous improvement and expansion
 
 ---
 
