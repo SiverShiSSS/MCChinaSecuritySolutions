@@ -175,25 +175,19 @@
                 <mxCell id="37" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/other/Entra_Connect_Sync.svg;" vertex="1" parent="1">
                     <mxGeometry x="1320" y="850" width="120" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="41" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+                <mxCell id="41" value="" style="shape=flexArrow;endArrow=classic;html=1;fillColor=#0050ef;strokeColor=#001DBC;" edge="1" parent="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="750" y="830" as="sourcePoint"/>
                         <mxPoint x="749.41" y="700" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="42" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+                <mxCell id="42" value="" style="shape=flexArrow;endArrow=classic;html=1;fillColor=#0050ef;strokeColor=#001DBC;" edge="1" parent="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="1370.5900000000001" y="830" as="sourcePoint"/>
                         <mxPoint x="1370" y="700" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="43" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=0.007;exitY=0.171;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="38">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="940.59" y="1130" as="sourcePoint"/>
-                        <mxPoint x="780" y="990" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="44" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=0.986;exitY=0.154;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="39">
+                <mxCell id="44" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=0.986;exitY=0.154;exitDx=0;exitDy=0;exitPerimeter=0;fillColor=#0050ef;strokeColor=#001DBC;" edge="1" parent="1" source="39">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="1541" y="1210" as="sourcePoint"/>
                         <mxPoint x="1330" y="990" as="targetPoint"/>
@@ -207,6 +201,12 @@
                 </mxCell>
                 <mxCell id="48" value="Partitioned On-prem AD" style="text;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;" vertex="1" parent="1">
                     <mxGeometry x="984" y="1300" width="168" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;fillColor=#0050ef;strokeColor=#001DBC;" edge="1" parent="1" source="38">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="483" y="1199" as="sourcePoint"/>
+                        <mxPoint x="790" y="980" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
             </root>
         </mxGraphModel>
