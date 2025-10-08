@@ -10,7 +10,10 @@
 - **🔒 增强安全性**: 利用全球领先的身份安全技术，实现跨云统一认证
 - **🌐 合规保障**: 满足中国数据主权要求，确保身份数据本地化管理  
 - **⚡ 用户体验**: 单点登录消除密码疲劳，提升工作效率
-- **🔧 灵活架构**: 支持上下游双向场景，适配多种业务模式
+- **🤖 AI赋能转型**: 合规访问Microsoft AI产品组合，包括Azure OpenAI、Copilot Studio、Security Copilot
+- **�️ 全面安全防护**: 无缝集成Defenders系列和Azure Sentinel，构建端到端安全防护体系
+- **📊 智能数据治理**: 通过Microsoft Purview实现数据分类、合规监控和隐私保护
+- **�🔧 灵活架构**: 支持混合云场景，适配多种业务模式和合规要求
 
 ---
 
@@ -20,13 +23,17 @@
 
 **最佳实践场景：总部在中国，主要业务系统部署在Mooncake，需要访问Global资源**
 
-![架构图：Mooncake作为IdP的跨云SSO方案](https://github.com/SiverShiSSS/MCChinaSecuritySolutions/blob/main/EntraID/MCSSOwithGBL/assets/upstream-view.png)
+![架构图：Mooncake作为IdP的跨云SSO方案](./assets/upstream-view.png)
 
 #### 架构优势
 - **🏢 中国总部优先**: 身份管理中心在中国，符合本土化管理要求
 - **🔐 统一安全控制**: Mooncake Entra ID统一管控身份认证和授权策略
 - **🌍 全球资源访问**: 无缝访问Global侧M365服务和Azure资源
 - **📋 合规性保障**: 核心身份数据存储在中国境内，满足数据主权要求
+- **🤖 AI能力解锁**: 合规访问Azure OpenAI、Copilot Studio等前沿AI服务
+- **🛡️ 企业级安全**: 集成Microsoft Defenders全家族和Azure Sentinel SIEM能力
+- **📊 智能治理**: 通过Microsoft Purview实现跨云数据治理和合规监控
+- **🔒 端到端加密**: 数据传输和存储全程加密，确保安全合规
 
 #### 核心认证流程
 1. **身份认证**: 用户在Mooncake Entra ID完成身份认证（含MFA/条件访问）
@@ -43,9 +50,51 @@
 - Storage Account、Key Vault（数据和安全服务）
 
 **Global侧扩展服务（联合目标）：**
-- 企业应用程序和SaaS服务
-- Azure全球区域资源
-- 第三方集成应用
+- **Microsoft 365全套服务**（Teams、Outlook、SharePoint、OneDrive）
+- **Azure AI平台**（Azure OpenAI、AI Foundry、Machine Learning）
+- **Copilot产品家族**（Microsoft 365 Copilot、Security Copilot、Copilot Studio）
+- **安全运营中心**（Azure Sentinel、Microsoft Defenders全系列）
+- **数据治理平台**（Microsoft Purview、Power BI）
+- **企业应用程序和SaaS服务**
+- **Azure全球区域资源**（计算、存储、网络、数据库）
+
+---
+
+## 🚀 数字化与AI转型加速器
+
+### AI能力全面解锁
+通过这个跨云SSO架构，中国企业可以在完全合规的前提下，充分利用Microsoft全球AI产品组合：
+
+#### 🤖 生成式AI平台
+- **Azure OpenAI Service**: 访问GPT-4、DALL-E、Codex等前沿大语言模型
+- **AI Foundry**: 构建、部署和管理企业级AI应用
+- **Copilot Studio**: 创建定制化的AI助手和智能工作流
+
+#### 🧠 Microsoft Copilot生态
+- **Microsoft 365 Copilot**: AI赋能的办公协作体验
+- **Security Copilot**: AI驱动的安全运营和威胁分析
+- **GitHub Copilot**: AI辅助编程和开发效率提升
+
+### 🛡️ 零信任安全架构
+基于身份联合的安全防护体系，实现全面的企业安全保障：
+
+#### Microsoft Defenders全家族
+- **Defender for Cloud**: 云原生安全态势管理
+- **Defender for Endpoint**: 终端检测与响应(EDR)
+- **Defender for Office 365**: 邮件和协作安全
+- **Defender for Identity**: 身份威胁检测与保护
+
+#### 安全运营中心(SOC)
+- **Azure Sentinel**: 云原生SIEM/SOAR平台
+- **威胁情报集成**: 全球威胁数据和本地化分析
+- **自动化响应**: AI驱动的安全事件处置
+
+### 📊 智能数据治理
+- **Microsoft Purview**: 跨云数据发现、分类和保护
+- **合规自动化**: 数据主权和隐私法规遵循
+- **敏感数据保护**: 端到端的数据生命周期管理
+
+> 💡 **关键优势**: 用户身份数据始终保留在中国境内，同时能够安全合规地访问Microsoft全球最先进的AI和安全产品，实现数字化转型与合规要求的完美平衡。
 
 ---
 
