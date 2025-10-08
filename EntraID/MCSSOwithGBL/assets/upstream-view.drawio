@@ -34,7 +34,7 @@
                 <mxCell id="mc-appgw" value="App Gateway" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Application_Gateways.svg;" vertex="1" parent="mc-group">
                     <mxGeometry x="470" y="70" width="68" height="68" as="geometry"/>
                 </mxCell>
-                <mxCell id="mc-sql" value="SQL Database" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/Azure_SQL.svg;" vertex="1" parent="mc-group">
+                <mxCell id="mc-sql" value="Azure Firewalls" style="aspect=fixed;html=1;align=center;image;fontSize=12;image=img/lib/mscae/Azure_Firewall.svg;sketch=0;points=[];" vertex="1" parent="mc-group">
                     <mxGeometry x="570" y="70" width="68" height="68" as="geometry"/>
                 </mxCell>
                 <mxCell id="mc-storage" value="Storage Account" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/storage/Storage_Accounts.svg;" vertex="1" parent="mc-group">
@@ -43,8 +43,8 @@
                 <mxCell id="mc-keyvault" value="Key Vault" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/security/Key_Vaults.svg;" vertex="1" parent="mc-group">
                     <mxGeometry x="470" y="170" width="68" height="68" as="geometry"/>
                 </mxCell>
-                <mxCell id="mc-azure-label" value="Azure Resources (MC Cloud)" style="text;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;" vertex="1" parent="mc-group">
-                    <mxGeometry x="370" y="270" width="168" height="30" as="geometry"/>
+                <mxCell id="mc-azure-label" value="Azure Resources and Infra Safeguared (MC Cloud)" style="text;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;" vertex="1" parent="mc-group">
+                    <mxGeometry x="402" y="280" width="168" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="4" value="..." style="text;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=24;fontStyle=1;" vertex="1" parent="mc-group">
                     <mxGeometry x="570" y="180" width="68" height="68" as="geometry"/>
@@ -62,7 +62,7 @@
                     <mxGeometry x="150" y="170" width="68" height="68" as="geometry"/>
                 </mxCell>
                 <mxCell id="mc-m365-label" value="M365 Services (Safguarded In Gallatin)" style="text;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;" vertex="1" parent="mc-group">
-                    <mxGeometry x="90" y="270" width="168" height="30" as="geometry"/>
+                    <mxGeometry x="80" y="280" width="168" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="25" value="..." style="text;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=24;fontStyle=1;" vertex="1" parent="mc-group">
                     <mxGeometry x="230" y="170" width="68" height="68" as="geometry"/>
@@ -80,7 +80,7 @@
                     <mxGeometry x="560" y="60" width="68" height="68" as="geometry"/>
                 </mxCell>
                 <mxCell id="gl-azure-label" value="Mangae Azure Resources/M365 with fully safeguarded (Global)" style="text;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;" vertex="1" parent="gl-group">
-                    <mxGeometry x="130" y="310" width="370" height="30" as="geometry"/>
+                    <mxGeometry x="100" y="320" width="370" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="5" value="Virtual Machine" style="aspect=fixed;html=1;align=center;image;fontSize=12;image=img/lib/azure2/compute/Virtual_Machines_Classic.svg;points=[];" vertex="1" parent="gl-group">
                     <mxGeometry x="660" y="60" width="68" height="68" as="geometry"/>
@@ -112,7 +112,7 @@
                 <mxCell id="12" value="OneDrive" style="aspect=fixed;html=1;align=center;image;fontSize=12;image=img/lib/microsoft_office_365/Microsoft_OneDrive_for_Business.svg;sketch=0;pointerEvents=1;shadow=0;dashed=0;strokeColor=none;fillColor=#DF8C42;labelPosition=center;outlineConnect=0;shape=mxgraph.veeam2.microsoft_onedrive;" vertex="1" parent="gl-group">
                     <mxGeometry x="270" y="60" width="68" height="68" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="SharePoint" style="aspect=fixed;html=1;align=center;image;fontSize=12;image=img/lib/microsoft_office_365/Microsoft_SharePoint_Online.svg;sketch=0;pointerEvents=1;shadow=0;dashed=0;strokeColor=none;fillColor=#DF8C42;labelPosition=center;outlineConnect=0;shape=mxgraph.veeam2.microsoft_sharepoint;" vertex="1" parent="gl-group">
+                <mxCell id="14" value="DDoS Protection" style="aspect=fixed;html=1;align=center;image;fontSize=12;image=img/lib/azure2/networking/DDoS_Protection_Plans.svg;sketch=0;pointerEvents=1;shadow=0;dashed=0;strokeColor=none;fillColor=#DF8C42;labelPosition=center;outlineConnect=0;shape=image;points=[];" vertex="1" parent="gl-group">
                     <mxGeometry x="50" y="190" width="68" height="68" as="geometry"/>
                 </mxCell>
                 <mxCell id="33" value="" style="shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#EF8F21;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam.2d.end_to_end_encryption;" vertex="1" parent="gl-group">
