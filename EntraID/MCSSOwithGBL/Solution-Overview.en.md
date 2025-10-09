@@ -7,13 +7,13 @@
 This solution provides China-based customers with a comprehensive cross-cloud Single Sign-On (SSO) architecture, enabling secure identity federation between Microsoft Entra ID Mooncake and Global tenants. Leveraging SAML 2.0 protocol, it supports bidirectional authentication flows to meet identity management requirements across diverse business scenarios.
 
 ### Core Value Propositions
-- **🔒 Enhanced Security**: Leverage world-class identity security technology for unified cross-cloud authentication
-- **🌐 Compliance Assurance**: Meet China's data sovereignty requirements with localized identity data management
-- **⚡ User Experience**: Single sign-on eliminates password fatigue and improves productivity
-- **🤖 AI-Powered Transformation**: Compliant access to Microsoft AI portfolio including Azure OpenAI, Copilot Studio, and Security Copilot
-- **🛡️ Comprehensive Security Protection**: Seamless integration with Defenders family and Azure Sentinel for end-to-end security
-- **📊 Intelligent Data Governance**: Achieve data classification, compliance monitoring, and privacy protection through Microsoft Purview
-- **🔧 Flexible Architecture**: Support hybrid cloud scenarios and adapt to various business models and compliance requirements
+- Enhanced Security: Leverage world-class identity security technology for unified cross-cloud authentication
+- Compliance Assurance: Meet China's data sovereignty requirements with localized identity data management
+- User Experience: Single sign-on eliminates password fatigue and improves productivity
+- AI-Powered Transformation: Compliant access to Microsoft AI portfolio including Azure OpenAI, Copilot Studio, and Security Copilot
+- Comprehensive Security Protection: Seamless integration with Defenders family and Azure Sentinel for end-to-end security
+- Intelligent Data Governance: Achieve data classification, compliance monitoring, and privacy protection through Microsoft Purview
+- Flexible Architecture: Support hybrid cloud scenarios and adapt to various business models and compliance requirements
 
 ---
 
@@ -101,16 +101,16 @@ This solution provides China-based customers with a comprehensive cross-cloud Si
 ![Architecture: Cross-Cloud SSO with Mooncake as IdP](./assets/upstream-view.png)
 
 #### Architecture Advantages
-- **🏢 China-First Approach**: Identity management center in China, aligning with local governance requirements
-- **🔐 Unified Security Control**: Mooncake Entra ID centrally manages authentication and authorization policies
-- **🌍 Global Resource Access**: Seamless access to Global M365 services and Azure resources
-- **� Flexible Connectivity**: Multiple network options including VPN Gateway and ExpressRoute for secure cross-cloud connections
-- **�📋 Compliance Assurance**: Core identity data stored within China borders, meeting data sovereignty requirements
-- **🤖 AI Capability Unlock**: Compliant access to Azure OpenAI, Copilot Studio, and other cutting-edge AI services
-- **🛡️ Enterprise-Grade Security**: Integration with Microsoft Defenders family and Azure Sentinel SIEM capabilities
-- **📊 Intelligent Governance**: Cross-cloud data governance and compliance monitoring through Microsoft Purview
-- **🔒 End-to-End Encryption**: Full encryption for data transmission and storage, ensuring security compliance
-- **⚡ Optimized Performance**: Dedicated network paths via ExpressRoute for enhanced performance and reliability
+- China-First Approach: Identity management center in China, aligning with local governance requirements
+- Unified Security Control: Mooncake Entra ID centrally manages authentication and authorization policies
+- Global Resource Access: Seamless access to Global M365 services and Azure resources
+- Flexible Connectivity: Multiple network options including VPN Gateway and ExpressRoute for secure cross-cloud connections
+- Compliance Assurance: Core identity data stored within China borders, meeting data sovereignty requirements
+- AI Capability Unlock: Compliant access to Azure OpenAI, Copilot Studio, and other cutting-edge AI services
+- Enterprise-Grade Security: Integration with Microsoft Defenders family and Azure Sentinel SIEM capabilities
+- Intelligent Governance: Cross-cloud data governance and compliance monitoring through Microsoft Purview
+- End-to-End Encryption: Full encryption for data transmission and storage, ensuring security compliance
+- Optimized Performance: Dedicated network paths via ExpressRoute for enhanced performance and reliability
 
 #### Core Authentication Flow
 1. **Identity Authentication**: User completes authentication in Mooncake Entra ID (including MFA/Conditional Access)
@@ -128,11 +128,11 @@ This solution provides China-based customers with a comprehensive cross-cloud Si
 - Storage Account, Key Vault (Data and Security Services)
 
 **Global Extended Services (Federation Target):**
-- **Microsoft 365 Complete Suite** (Teams, Outlook, SharePoint, OneDrive)
-- **Azure AI Platform** (Azure OpenAI, AI Foundry, Machine Learning)
-- **Copilot Product Family** (Microsoft 365 Copilot, Security Copilot, Copilot Studio)
-- **Security Operations Center** (Azure Sentinel, Microsoft Defenders full series)
-- **Data Governance Platform** (Microsoft Purview, Power BI)
+- Microsoft 365 Complete Suite (Teams, Outlook, SharePoint, OneDrive)
+- Azure AI Platform (Azure OpenAI, AI Foundry, Machine Learning)
+- Copilot Product Family (Microsoft 365 Copilot, Security Copilot, Copilot Studio)
+- Security Operations Center (Azure Sentinel, Microsoft Defenders full series)
+- Data Governance Platform (Microsoft Purview, Power BI)
 - **Enterprise Applications and SaaS Services**
 - **Azure Global Region Resources** (Compute, Storage, Network, Database)
 
@@ -144,23 +144,23 @@ This solution provides China-based customers with a comprehensive cross-cloud Si
 The architecture supports multiple network connectivity options to ensure secure, reliable, and high-performance communication between Mooncake and Global clouds:
 
 #### 🌐 VPN Gateway Connections
-- **Site-to-Site VPN**: Secure IPsec tunnels for standard connectivity needs
-- **Point-to-Site VPN**: Individual client connections for remote access scenarios
-- **Cost-Effective**: Suitable for moderate bandwidth requirements and testing environments
-- **Easy Setup**: Quick deployment with standard internet connectivity
+- Site-to-Site VPN: Secure IPsec tunnels for standard connectivity needs
+- Point-to-Site VPN: Individual client connections for remote access scenarios
+- Cost-Effective: Suitable for moderate bandwidth requirements and testing environments
+- Easy Setup: Quick deployment with standard internet connectivity
 
 #### ⚡ ExpressRoute Connections
-- **Dedicated Private Circuits**: Direct connections to Microsoft cloud services
-- **High Performance**: Guaranteed bandwidth and lower latency
-- **Enhanced Security**: Private connectivity bypassing the public internet
-- **SLA Guarantees**: 99.95% availability with Microsoft SLA coverage
-- **Regulatory Compliance**: Meets strict data sovereignty and security requirements
+- Dedicated Private Circuits: Direct connections to Microsoft cloud services
+- High Performance: Guaranteed bandwidth and lower latency
+- Enhanced Security: Private connectivity bypassing the public internet
+- SLA Guarantees: 99.95% availability with Microsoft SLA coverage
+- Regulatory Compliance: Meets strict data sovereignty and security requirements
 
 #### 🛡️ Hybrid Security Benefits
-- **Traffic Isolation**: Dedicated network paths separate from public internet
-- **Enhanced Monitoring**: Complete visibility into cross-cloud traffic flows
-- **Conditional Access Integration**: Network-aware access policies
-- **Zero Trust Architecture**: Network security as part of comprehensive identity protection
+- Traffic Isolation: Dedicated network paths separate from public internet
+- Enhanced Monitoring: Complete visibility into cross-cloud traffic flows
+- Conditional Access Integration: Network-aware access policies
+- Zero Trust Architecture: Network security as part of comprehensive identity protection
 
 ---
 
@@ -170,35 +170,36 @@ The architecture supports multiple network connectivity options to ensure secure
 Through this cross-cloud SSO architecture, Chinese enterprises can fully utilize Microsoft's global AI product portfolio while maintaining complete compliance:
 
 #### 🤖 Generative AI Platform
-- **Azure OpenAI Service**: Access to cutting-edge large language models like GPT-4, DALL-E, and Codex
-- **AI Foundry**: Build, deploy, and manage enterprise-grade AI applications
-- **Copilot Studio**: Create customized AI assistants and intelligent workflows
+- Azure OpenAI Service: Access to cutting-edge large language models like GPT-4, DALL-E, and Codex
+- AI Foundry: Build, deploy, and manage enterprise-grade AI applications
+- Copilot Studio: Create customized AI assistants and intelligent workflows
 
 #### 🧠 Microsoft Copilot Ecosystem
-- **Microsoft 365 Copilot**: AI-powered office collaboration experience
-- **Security Copilot**: AI-driven security operations and threat analysis
-- **GitHub Copilot**: AI-assisted programming and development productivity enhancement
+- Microsoft 365 Copilot: AI-powered office collaboration experience
+- Security Copilot: AI-driven security operations and threat analysis
+- GitHub Copilot: AI-assisted programming and development productivity enhancement
 
 ### 🛡️ Zero Trust Security Architecture
 Identity federation-based security protection system for comprehensive enterprise security assurance:
 
 #### Microsoft Defenders Full Family
-- **Defender for Cloud**: Cloud-native security posture management
-- **Defender for Endpoint**: Endpoint detection and response (EDR)
-- **Defender for Office 365**: Email and collaboration security
-- **Defender for Identity**: Identity threat detection and protection
+- Defender for Cloud: Cloud-native security posture management
+- Defender for Endpoint: Endpoint detection and response (EDR)
+- Defender for Office 365: Email and collaboration security
+- Defender for Identity: Identity threat detection and protection
 
 #### Security Operations Center (SOC)
-- **Azure Sentinel**: Cloud-native SIEM/SOAR platform
-- **Threat Intelligence Integration**: Global threat data with localized analysis
-- **Automated Response**: AI-driven security incident handling
+- Azure Sentinel: Cloud-native SIEM/SOAR platform
+- Threat Intelligence Integration: Global threat data with localized analysis
+- Automated Response: AI-driven security incident handling
 
 ### 📊 Intelligent Data Governance
-- **Microsoft Purview**: Cross-cloud data discovery, classification, and protection
-- **Compliance Automation**: Data sovereignty and privacy regulation adherence
-- **Sensitive Data Protection**: End-to-end data lifecycle management
+- Microsoft Purview: Cross-cloud data discovery, classification, and protection
+- Compliance Automation: Data sovereignty and privacy regulation adherence
+- Sensitive Data Protection: End-to-end data lifecycle management
 
 > 💡 **Key Advantage**: User identity data always remains within China's borders while enabling secure, compliant access to Microsoft's most advanced global AI and security products, achieving the perfect balance between digital transformation and compliance requirements.
+Key Advantage: User identity data always remains within China's borders while enabling secure, compliant access to Microsoft's most advanced global AI and security products, achieving the perfect balance between digital transformation and compliance requirements.
 
 ---
 
@@ -231,19 +232,19 @@ Identity federation-based security protection system for comprehensive enterpris
 This solution addresses key China regulatory requirements while enabling global Microsoft services access:
 
 #### Data Sovereignty Protection
-- **🏢 Identity Data Localization**: User master identity objects remain within China borders (Mooncake)
-- **🔐 Controlled Data Flow**: Only necessary authentication tokens cross borders, not user data
-- **📊 Audit Trail**: Complete visibility into cross-border authentication activities
+- Identity Data Localization: User master identity objects remain within China borders (Mooncake)
+- Controlled Data Flow: Only necessary authentication tokens cross borders, not user data
+- Audit Trail: Complete visibility into cross-border authentication activities
 
 #### Regulatory Alignment
-- **🛡️ Cybersecurity Law**: Compliant data handling and security assessment processes
-- **🔒 PIPL Compliance**: User consent mechanisms and data minimization principles
-- **⚖️ Critical Infrastructure**: Appropriate security protection levels for enterprise systems
+- Cybersecurity Law: Compliant data handling and security assessment processes
+- PIPL Compliance: User consent mechanisms and data minimization principles
+- Critical Infrastructure: Appropriate security protection levels for enterprise systems
 
 #### Security Controls
-- **🔑 Strong Authentication**: Multi-factor authentication and conditional access policies
-- **📈 Continuous Monitoring**: Real-time security analysis and incident response
-- **🛡️ Zero Trust Architecture**: Identity-centric security model with least privilege access
+- Strong Authentication: Multi-factor authentication and conditional access policies
+- Continuous Monitoring: Real-time security analysis and incident response
+- Zero Trust Architecture: Identity-centric security model with least privilege access
 
 ---
 
