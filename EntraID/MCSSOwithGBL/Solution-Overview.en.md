@@ -24,6 +24,9 @@ This solution provides China-based customers with a comprehensive cross-cloud Si
 | CIO (Chief Information Officer)      | [CIO Overview (EN)](Solution-Overview-CIO.en.md)      | [CIO 概述 (中文)](Solution-Overview-CIO.md)      |
 | CISO (Chief Information Security Officer) | [CISO Overview (EN)](Solution-Overview-CISO.en.md)    | [CISO 概述 (中文)](Solution-Overview-CISO.md)    |
 | Security Manager    | [Security Manager Overview (EN)](Solution-Overview-SecurityManager.en.md) | [安全经理概述 (中文)](Solution-Overview-SecurityManager.md) |
+| CFO (Chief Financial Officer) | [CFO Overview (EN)](Solution-Overview-CFO.en.md) | [CFO 概述 (中文)](Solution-Overview-CFO.md) |
+
+---
 
 ### CIO Perspective
 
@@ -34,7 +37,10 @@ This solution provides China-based customers with a comprehensive cross-cloud Si
 - Flexible architecture supports diverse business models, reducing IT operational complexity and cost.
 - Secure, stable cross-cloud connectivity via ExpressRoute/VPN ensures business continuity for mission-critical workloads.
 
-**Key Focus Areas:** ROI, business agility, compliance, and innovation enablement.
+**Key Objectives & Interests (KOI):**
+- ROI, business agility, compliance, innovation enablement, digital leadership
+**Motivation:**
+- Drive transformation, enable global growth, reduce operational risk, empower teams
 
 ---
 
@@ -47,7 +53,10 @@ This solution provides China-based customers with a comprehensive cross-cloud Si
 - Network security: ExpressRoute/VPN ensures encrypted and isolated cross-cloud data transmission.
 - Comprehensive audit, monitoring, and compliance reporting for incident response and regulatory review.
 
-**Key Focus Areas:** Data sovereignty, threat protection, compliance, auditability, risk management.
+**Key Objectives & Interests (KOI):**
+- Data sovereignty, threat protection, compliance, auditability, risk management
+**Motivation:**
+- Minimize risk, ensure regulatory alignment, protect enterprise assets, enable secure innovation
 
 ---
 
@@ -60,7 +69,26 @@ This solution provides China-based customers with a comprehensive cross-cloud Si
 - Flexible network connectivity (ExpressRoute/VPN) adapts to existing enterprise network architecture.
 - Detailed operational guides and automation scripts reduce human error risk.
 
-**Key Focus Areas:** Operational efficiency, automation, monitoring & alerting, operational control.
+**Key Objectives & Interests (KOI):**
+- Operational efficiency, automation, monitoring & alerting, operational control, incident response
+**Motivation:**
+- Streamline daily operations, reduce manual workload, improve response speed, maintain compliance
+
+---
+
+### CFO Perspective
+
+**Financial Optimization & Risk Control**
+- Optimize IT and security spend with unified cross-cloud architecture, reducing duplication and overhead.
+- Enable cost transparency and predictability for cloud resources and security investments.
+- Support compliance-driven cost avoidance (fines, audit failures) and business continuity.
+- Leverage Microsoft’s global scale for better pricing, licensing, and support.
+- Facilitate financial planning for digital transformation and AI adoption.
+
+**Key Objectives & Interests (KOI):**
+- Cost control, financial transparency, risk mitigation, compliance cost avoidance, value realization
+**Motivation:**
+- Maximize ROI, minimize financial risk, support strategic growth, ensure budget alignment
 
 ---
 
