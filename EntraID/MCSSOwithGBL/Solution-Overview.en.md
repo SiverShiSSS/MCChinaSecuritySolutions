@@ -17,6 +17,16 @@ This solution provides China-based customers with a comprehensive cross-cloud Si
 
 ---
 
+## Role-Based Solution Perspectives
+
+| Role                | English Overview Link                                   | 中文概述链接                                   |
+|---------------------|--------------------------------------------------------|------------------------------------------------|
+| CIO (Chief Information Officer)      | [CIO Overview (EN)](Solution-Overview-CIO.en.md)      | [CIO 概述 (中文)](Solution-Overview-CIO.md)      |
+| CISO (Chief Information Security Officer) | [CISO Overview (EN)](Solution-Overview-CISO.en.md)    | [CISO 概述 (中文)](Solution-Overview-CISO.md)    |
+| Security Manager    | [Security Manager Overview (EN)](Solution-Overview-SecurityManager.en.md) | [安全经理概述 (中文)](Solution-Overview-SecurityManager.md) |
+
+---
+
 ## Solution Architecture
 
 ### Unified Identity Management: Mooncake as Identity Provider (IdP)
@@ -29,17 +39,20 @@ This solution provides China-based customers with a comprehensive cross-cloud Si
 - **🏢 China-First Approach**: Identity management center in China, aligning with local governance requirements
 - **🔐 Unified Security Control**: Mooncake Entra ID centrally manages authentication and authorization policies
 - **🌍 Global Resource Access**: Seamless access to Global M365 services and Azure resources
-- **📋 Compliance Assurance**: Core identity data stored within China borders, meeting data sovereignty requirements
+- **� Flexible Connectivity**: Multiple network options including VPN Gateway and ExpressRoute for secure cross-cloud connections
+- **�📋 Compliance Assurance**: Core identity data stored within China borders, meeting data sovereignty requirements
 - **🤖 AI Capability Unlock**: Compliant access to Azure OpenAI, Copilot Studio, and other cutting-edge AI services
 - **🛡️ Enterprise-Grade Security**: Integration with Microsoft Defenders family and Azure Sentinel SIEM capabilities
 - **📊 Intelligent Governance**: Cross-cloud data governance and compliance monitoring through Microsoft Purview
 - **🔒 End-to-End Encryption**: Full encryption for data transmission and storage, ensuring security compliance
+- **⚡ Optimized Performance**: Dedicated network paths via ExpressRoute for enhanced performance and reliability
 
 #### Core Authentication Flow
 1. **Identity Authentication**: User completes authentication in Mooncake Entra ID (including MFA/Conditional Access)
-2. **SAML Federation**: Mooncake as IdP sends SAML assertion to Global tenant
-3. **Permission Assignment**: User gains access to Global Azure resources and enterprise applications
-4. **Unified Experience**: Single sign-on enables seamless cross-cloud work experience
+2. **Network Connectivity**: Secure communication via VPN Gateway or ExpressRoute connections
+3. **SAML Federation**: Mooncake as IdP sends SAML assertion to Global tenant through secure network channels
+4. **Permission Assignment**: User gains access to Global Azure resources and enterprise applications
+5. **Unified Experience**: Single sign-on enables seamless cross-cloud work experience with optimized network performance
 
 #### Supported Service Scope
 
@@ -60,7 +73,33 @@ This solution provides China-based customers with a comprehensive cross-cloud Si
 
 ---
 
-## 🚀 Digital Transformation & AI Acceleration
+## � Network Connectivity Options
+
+### Secure Cross-Cloud Connectivity
+The architecture supports multiple network connectivity options to ensure secure, reliable, and high-performance communication between Mooncake and Global clouds:
+
+#### 🌐 VPN Gateway Connections
+- **Site-to-Site VPN**: Secure IPsec tunnels for standard connectivity needs
+- **Point-to-Site VPN**: Individual client connections for remote access scenarios
+- **Cost-Effective**: Suitable for moderate bandwidth requirements and testing environments
+- **Easy Setup**: Quick deployment with standard internet connectivity
+
+#### ⚡ ExpressRoute Connections
+- **Dedicated Private Circuits**: Direct connections to Microsoft cloud services
+- **High Performance**: Guaranteed bandwidth and lower latency
+- **Enhanced Security**: Private connectivity bypassing the public internet
+- **SLA Guarantees**: 99.95% availability with Microsoft SLA coverage
+- **Regulatory Compliance**: Meets strict data sovereignty and security requirements
+
+#### 🛡️ Hybrid Security Benefits
+- **Traffic Isolation**: Dedicated network paths separate from public internet
+- **Enhanced Monitoring**: Complete visibility into cross-cloud traffic flows
+- **Conditional Access Integration**: Network-aware access policies
+- **Zero Trust Architecture**: Network security as part of comprehensive identity protection
+
+---
+
+## �🚀 Digital Transformation & AI Acceleration
 
 ### Comprehensive AI Capability Unlock
 Through this cross-cloud SSO architecture, Chinese enterprises can fully utilize Microsoft's global AI product portfolio while maintaining complete compliance:
