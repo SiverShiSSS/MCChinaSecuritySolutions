@@ -40,10 +40,7 @@
 **关键目标与关注点（KOI）：**
 - 投资回报率（ROI）、业务敏捷性、合规、创新能力、数字化领导力
 **动因：**
-- 推动转型
-- 支持全球增长
-- 降低运营风险
-- 赋能团队
+- 推动转型、支持全球增长、降低运营风险、赋能团队
 
 ---
 
@@ -104,16 +101,16 @@
 ![架构图：Mooncake作为IdP的跨云SSO方案](./assets/upstream-view.png)
 
 #### 架构优势
-中国总部优先: 身份管理中心在中国，符合本土化管理要求
-统一安全控制: Mooncake Entra ID统一管控身份认证和授权策略
-全球资源访问: 无缝访问Global侧M365服务和Azure资源
-灵活连接选项: 支持VPN网关和ExpressRoute等多种安全跨云连接方式
-合规性保障: 核心身份数据存储在中国境内，满足数据主权要求
-AI能力解锁: 合规访问Azure OpenAI、Copilot Studio等前沿AI服务
-企业级安全: 集成Microsoft Defenders全家族和Azure Sentinel SIEM能力
-智能治理: 通过Microsoft Purview实现跨云数据治理和合规监控
-端到端加密: 数据传输和存储全程加密，确保安全合规
-性能优化: 通过ExpressRoute专用网络路径提升性能和可靠性
+1. **中国总部优先**：身份管理中心在中国，符合本土化管理要求
+2. **统一安全控制**：Mooncake Entra ID统一管控身份认证和授权策略
+3. **全球资源访问**：无缝访问Global侧M365服务和Azure资源
+4. **灵活连接选项**：支持VPN网关和ExpressRoute等多种安全跨云连接方式
+5. **合规性保障**：核心身份数据存储在中国境内，满足数据主权要求
+6. **AI能力解锁**：合规访问Azure OpenAI、Copilot Studio等前沿AI服务
+7. **企业级安全**：集成Microsoft Defenders全家族和Azure Sentinel SIEM能力
+8. **智能治理**：通过Microsoft Purview实现跨云数据治理和合规监控
+9. **端到端加密**：数据传输和存储全程加密，确保安全合规
+10. **性能优化**：通过ExpressRoute专用网络路径提升性能和可靠性
 
 #### 核心认证流程
 1. **身份认证**: 用户在Mooncake Entra ID完成身份认证（含MFA/条件访问）
@@ -290,9 +287,9 @@ SLA保证: Microsoft SLA覆盖的99.95%可用性
 - [架构图源文件](./assets/)
 
 ### 联系支持
-- **Microsoft中国技术支持**: 通过Azure门户提交支持票据
-- **合作伙伴支持**: 联系您的Microsoft合作伙伴
-- **社区支持**: Microsoft Tech Community
+- Microsoft中国技术支持: 通过Azure门户提交支持票据
+- 合作伙伴支持: 联系您的Microsoft合作伙伴
+- 社区支持: Microsoft Tech Community
 
 ---
 
