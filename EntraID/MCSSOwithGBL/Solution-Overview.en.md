@@ -25,6 +25,43 @@ This solution provides China-based customers with a comprehensive cross-cloud Si
 | CISO (Chief Information Security Officer) | [CISO Overview (EN)](Solution-Overview-CISO.en.md)    | [CISO 概述 (中文)](Solution-Overview-CISO.md)    |
 | Security Manager    | [Security Manager Overview (EN)](Solution-Overview-SecurityManager.en.md) | [安全经理概述 (中文)](Solution-Overview-SecurityManager.md) |
 
+### CIO Perspective
+
+**Digital Transformation & Business Value**
+- Accelerate enterprise digital transformation with cross-cloud SSO architecture, supporting global business expansion and local compliance.
+- Seamless access to China and Global resources, improving employee productivity and collaboration.
+- Compliant integration with Microsoft AI products (Copilot, OpenAI), driving innovation and intelligent operations.
+- Flexible architecture supports diverse business models, reducing IT operational complexity and cost.
+- Secure, stable cross-cloud connectivity via ExpressRoute/VPN ensures business continuity for mission-critical workloads.
+
+**Key Focus Areas:** ROI, business agility, compliance, and innovation enablement.
+
+---
+
+### CISO Perspective
+
+**Security & Compliance Assurance**
+- End-to-end identity security architecture with MFA, Conditional Access, and Zero Trust.
+- Core identity data localization meets China data sovereignty and compliance requirements.
+- Integrated Microsoft Defenders, Sentinel, Purview for threat detection, response, and data governance.
+- Network security: ExpressRoute/VPN ensures encrypted and isolated cross-cloud data transmission.
+- Comprehensive audit, monitoring, and compliance reporting for incident response and regulatory review.
+
+**Key Focus Areas:** Data sovereignty, threat protection, compliance, auditability, risk management.
+
+---
+
+### Security Manager Perspective
+
+**Daily Security Operations & Management**
+- Simplified identity management with unified cross-cloud authentication and access control.
+- Automated security policies and compliance checks for operational efficiency.
+- Centralized monitoring and alerting via SIEM/SOAR (Sentinel) for rapid incident response.
+- Flexible network connectivity (ExpressRoute/VPN) adapts to existing enterprise network architecture.
+- Detailed operational guides and automation scripts reduce human error risk.
+
+**Key Focus Areas:** Operational efficiency, automation, monitoring & alerting, operational control.
+
 ---
 
 ## Solution Architecture
